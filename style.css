@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 90vw;
+    height: 70px;
+    position: relative;
+    box-shadow: 0 0px 0px;
+    margin: 50px 0;
+    
+}
+ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    width: 80%;
+    height: 100%;
+}
+
+/* Start First*/
+.first-tooltip{
+    background: #063146;
+    display: flex;
+}
+.first-tooltip ul li a{
+    color: aliceblue;
+}
+.first-tooltip span{
+    position: absolute;
+    top: 0;
+    background: blueviolet;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    padding: 5px;
+    border-radius: 7px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    box-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+}
+.first-tooltip span::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: blueviolet;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.first-tooltip li:hover span{
+    opacity: 1;
+    top: -30px;
+    pointer-events: auto;
+}
+/*End First*/
+
+
+/* Start second*/
+.second-tooltip{
+    background-color: rgb(184, 59, 9);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.second-tooltip .button{
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    background-color: red;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-out;
+}
+.second-tooltip .button .icon{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 16px;
+    transition: all 0.1s ease-out;
+}
+.second-tooltip .button span{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+}
+.second-tooltip .button:hover{
+    width: 170px;
+}
+.second-tooltip .button:hover span{
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/*End second*/
+
+
+/* Start third*/
+.third-tooltip{
+    background-color: rgb(34, 153, 10);
+}
+/*End third*/
+
+
+/* Start fourth*/
+.fourth-tooltip{
+    background-color: rgb(187, 199, 15);
+}
+/*End fourth*/
+
+
+/* Start fifth*/
+.fifth-tooltip{
+    background-color: rgb(15, 157, 182);
+}
+/*End fifth*/
