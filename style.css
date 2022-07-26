@@ -102,6 +102,7 @@ ul li{
     margin-left: 16px;
     transition: all 0.1s ease-out;
 }
+
 .second-tooltip .button span{
     visibility: hidden;
     display: flex;
