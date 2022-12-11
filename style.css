@@ -1,6 +1,5 @@
 *{
     margin: 0;
-
     padding: 0;
     text-decoration: none;
     list-style: none;
@@ -12,7 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items:center;
-    
+
 }
 .container{
     display: flex;
